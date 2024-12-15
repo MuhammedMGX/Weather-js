@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 130vh;
+    
+}
+.navbar-collapse{
+    z-index: 99;
+    background-color: #1E202B;
+    padding: 15px;
+    border-radius: 15px;
+}
+.collapse{
+    z-index: 99;
+}
+.navbar-toggler .menuBtn i{
+    font-size: 20px;
+    border: none;
+}
+
+.navbar{
+    color: white;
+    background-color: #1E202B;
+    height: 150px;
+}
+.navbar i{
+    font-size: 55px;
+    color: #19C5E0;
+}
+.navbar p{
+    color: white;
+    font-size: 10px;
+}
+.navbar h6{
+    color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #0A92CD;
+}
+.navbar-nav a{
+    border: 3px solid transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 60px;
+    border-radius: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: 0.5s all;
+}
+.navbar-nav a:hover,
+.navbar-nav a.active{
+    color: #0A92CD;
+    border: 3px solid #0A92CD;
+}
+
+.banner{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-control:focus {
+    color: white;
+    border-color: transparent;
+    padding-left: 20px;
+    box-shadow: 0 0 0 .25rem transparent;
+}
+#search{
+    background-color: #1E202B;
+    width: 81%;
+    height: 50px;
+    border: none;
+    border-radius: 28px;
+    margin-top: 70px;
+}
+#search::placeholder {
+    color: #757575;
+    font-size: 14px;
+    padding-left: 20px;
+}
+#searchBtn{
+    background-color: #019AD8;
+    color: white;
+    right: 10%;
+    margin-top: 74px;
+    border-radius: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.demo{
+    background-color: #1E202B;
+    color: #BFC1C8;
+    width: 100%;
+    height: 350px;
+}
+.demo p{
+    font-size: 15px;
+}
+.demo span{
+    color: #099ABB;
+}
+.demo h1{
+    color: white;
+    font-family: Roboto;
+    font-size: 100px;
+    font-weight: 800;
+}
+.demo h3{
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.group{
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+.row{
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.cardSize{
+    height: 450px;
+}
+
+.one{
+    background-color: #323544;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.oneHeader{
+    width: 100%;
+    height: 10%;
+    background-color: #2E303E;
+    border-top-left-radius: 15px;
+}
+
+.two{
+    background-color: #272936;
+}
+.twoHeader{
+    height: 10%;
+    background-color: #232530;
+}
+
+
+.three{
+    background-color: #323544;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.threeHeader{
+    height: 10%;
+    background-color: #2E303E;
+    border-top-right-radius: 15px;
+}
+
+
+footer{
+    background-color: #252936;
+    height: 250px;
+}
+#email{
+    background-color: #1E202B;
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 28px;
+}
+#email::placeholder {
+    color: #757575;
+    font-size: 14px;
+    padding-left: 10px;
+}
+#subscribeBtn{
+    background-color: #019AD8;
+    color: white;
+    border-radius: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: 54px;
+    right: 280px;
+}
+
+
+.circlelink{
+    width: 40px;
+    height: 40px;
+    background-color: #1E202B;
+    transition: 0.5s all;
+}
+.circlelink i{
+    color: #019AD8;
+    transition: 0.5s all;
+}
+
+.circlelink:hover{
+    background-color: #0078FF;
+}
+.circlelink:hover i{
+    color: white;
+}
+
+@media screen and (max-width: 760px) {
+    body{
+        height: 280vh;
+    }
+    .banner{
+        height: 800px;
+    }
+    .demo{
+        height: 800px;
+    }
+    .demo h1{
+        font-size: 70px;
+    }
+    footer{
+        height: 350px;
+    }
+    #email{
+        width: 100%;
+    }
+    .one{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .oneHeader{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .three{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
