@@ -29,7 +29,7 @@ var apiKey = "40c1ba04b89543af95a192714241212"  ;
 var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
 
-
+console.log("Script loaded!");
 
 getLocation()
 function getLocation() {
