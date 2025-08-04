@@ -3,56 +3,48 @@
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
-* {
+*{
     box-sizing: border-box;
     margin: 0;
 }
-
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+body{
+    height: 100vh;
+    
 }
-
-body {
-    min-height: 100vh;
-    background: #1E202B;
-}
-
-/* NAVBAR */
-.navbar-collapse {
+.navbar-collapse{
     z-index: 99;
     background-color: #1E202B;
     padding: 15px;
     border-radius: 15px;
 }
-.collapse {
+.collapse{
     z-index: 99;
 }
-.navbar-toggler .menuBtn i {
+.navbar-toggler .menuBtn i{
     font-size: 20px;
     border: none;
 }
-.navbar {
+
+.navbar{
     color: white;
     background-color: #1E202B;
     height: 150px;
 }
-.navbar i {
+.navbar i{
     font-size: 55px;
     color: #19C5E0;
 }
-.navbar p {
+.navbar p{
     color: white;
     font-size: 10px;
 }
-.navbar h6 {
+.navbar h6{
     color: white;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #0A92CD;
 }
-.navbar-nav a {
+.navbar-nav a{
     border: 3px solid transparent;
     color: white;
     font-size: 14px;
@@ -63,22 +55,18 @@ body {
     transition: 0.5s all;
 }
 .navbar-nav a:hover,
-.navbar-nav a.active {
+.navbar-nav a.active{
     color: #0A92CD;
     border: 3px solid #0A92CD;
 }
 
-/* BANNER */
-.banner {
+.banner{
     width: 100%;
-    min-height: 350px;
+    height: 350px;
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: start;
 }
 .form-control:focus {
     color: white;
@@ -86,7 +74,7 @@ body {
     padding-left: 20px;
     box-shadow: 0 0 0 .25rem transparent;
 }
-#search {
+#search{
     background-color: #1E202B;
     width: 81%;
     height: 50px;
@@ -99,146 +87,170 @@ body {
     font-size: 14px;
     padding-left: 20px;
 }
-#searchBtn {
+#searchBtn{
     background-color: #019AD8;
     color: white;
     right: 10%;
     margin-top: 74px;
     border-radius: 28px;
-    padding: 8px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-/* DEMO */
-.demo {
+
+.demo{
     background-color: #1E202B;
     color: #BFC1C8;
     width: 100%;
-    padding: 2rem 0;
+    height: 350px;
 }
-.demo p {
+.demo p{
     font-size: 15px;
 }
-.demo span {
+.demo span{
     color: #099ABB;
 }
-.demo h1 {
+.demo h1{
     color: white;
     font-family: Roboto;
     font-size: 100px;
     font-weight: 800;
 }
-.demo h3 {
+.demo h3{
     color: white;
     font-family: Roboto;
     font-size: 30px;
     font-weight: 800;
 }
 
-.group {
+.group{
     margin: auto;
     width: 100%;
     border-radius: 15px;
 }
-.row {
+.row{
     margin: auto;
     width: 90%;
     border-radius: 15px;
 }
 
-.cardSize {
-    min-height: 100%;
-    padding: 1rem;
+.cardSize{
+    height: 450px;
 }
 
-.one {
+.one{
     background-color: #323544;
-    border-radius: 15px 0 0 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
-.oneHeader {
+.oneHeader{
     width: 100%;
+    height: 10%;
     background-color: #2E303E;
     border-top-left-radius: 15px;
 }
 
-.two {
+.two{
     background-color: #272936;
-    border-radius: 0;
 }
-.twoHeader {
+.twoHeader{
+    height: 10%;
     background-color: #232530;
 }
 
-.three {
+
+.three{
     background-color: #323544;
-    border-radius: 0 15px 15px 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
-.threeHeader {
+.threeHeader{
+    height: 10%;
     background-color: #2E303E;
     border-top-right-radius: 15px;
 }
 
-/* FOOTER (Sticky) */
-footer {
+
+footer{
     background-color: #252936;
-    padding: 5rem 1rem;
-    margin-top: auto;
+    height: 250px;
 }
-#email {
+#email{
     background-color: #1E202B;
     width: 70%;
     height: 50px;
     border: none;
     border-radius: 28px;
+    margin-bottom: 10px;
 }
 #email::placeholder {
     color: #757575;
     font-size: 14px;
     padding-left: 10px;
 }
-#subscribeBtn {
+#subscribeBtn{
     background-color: #019AD8;
     color: white;
     border-radius: 28px;
-    padding: 8px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     top: 54px;
     right: 280px;
 }
 
-.circlelink {
+
+.circlelink{
     width: 40px;
     height: 40px;
     background-color: #1E202B;
     transition: 0.5s all;
 }
-.circlelink i {
+.circlelink i{
     color: #019AD8;
     transition: 0.5s all;
 }
-.circlelink:hover {
+
+.circlelink:hover{
     background-color: #0078FF;
 }
-.circlelink:hover i {
+.circlelink:hover i{
     color: white;
 }
 
-/* RESPONSIVE FIX */
 @media screen and (max-width: 760px) {
-    .banner {
-        min-height: 800px;
+    body{
+        height: 280vh;
     }
-    .demo h1 {
+    .banner{
+        height: 800px;
+    }
+    .demo{
+        height: 800px;
+    }
+    .demo h1{
         font-size: 70px;
     }
-    footer {
-        padding: 3rem 1rem;
+    footer{
+        height: 350px;
     }
-    #email {
+    #email{
         width: 100%;
     }
-    .one {
-        border-radius: 15px 15px 0 0;
+    .one{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
-    .three {
-        border-radius: 0 0 15px 15px;
+    .oneHeader{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .three{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 }
