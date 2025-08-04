@@ -43,7 +43,7 @@ function showPosition(position) {
     firstSearchWeather( lat , lon , apiKey)
 }
 async function firstSearchWeather(lat , lon , key ) {
-    var res = await fetch(`http://api.weatherapi.com/v1/search.json?key=${key}&q=${lat},${lon}`);
+    var res = await fetch(`https://api.weatherapi.com/v1/search.json?key=${key}&q=${lat},${lon}`);
     res = await res.json();
     
     getForecastWeather(res[0].name , apiKey);
@@ -59,12 +59,12 @@ searchBtn.addEventListener("click" , function () {
     searchWeather(search.value , apiKey);
 })
 async function searchWeather(city , key ) {
-    var res = await fetch(`http://api.weatherapi.com/v1/search.json?key=${key}&q=${city}`);
+    var res = await fetch(`https://api.weatherapi.com/v1/search.json?key=${key}&q=${city}`);
     res = await res.json();
     getForecastWeather(res[0].name , apiKey);
 }
 async function getForecastWeather(city , key) {
-    var res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3`);
+    var res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3`);
     res = await res.json();
     console.log(res);
 
